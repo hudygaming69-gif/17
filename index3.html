@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Dodaj zadanie</title>
+<style>
+    body {
+        background-color: #ffcc99; /* jasno-pomarańczowe tło */
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: black;
+        margin-top: 40px;
+    }
+
+    label {
+        margin-right: 5px;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    input[type="submit"] {
+        padding: 5px 10px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <form>
+        <label>Zadanie do wykonania:</label>
+        <input type="text" name="zadanie">
+        <br>
+        <label>Data realizacji:</label>
+        <input type="date" name="data">
+        <input type="submit" value="Dodaj">
+    </form>
+</body>
+</html>
