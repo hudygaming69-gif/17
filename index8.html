@@ -2,56 +2,32 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Formularze - Klienci i Wykonawcy</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5ebe6;
-            text-align: center;
-            margin: 50px;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            gap: 100px;
-        }
-        .form-box {
-            background-color: #f3e6e0;
-            padding: 20px 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.2);
-        }
-        h2 {
-            margin-bottom: 15px;
-        }
-        input[type="text"], select {
-            padding: 5px;
-            margin-bottom: 10px;
-            width: 180px;
-        }
-        button {
-            padding: 5px 10px;
-            background-color: #b38b82;
-            border: none;
-            color: white;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #8c6d65;
-        }
-        .radio-group {
-            text-align: left;
-            margin-left: 30px;
-        }
-    </style>
+    <title>Formularz</title>
 </head>
 <body>
 
-<div class="container">
-    <!-- Formularz dla klientów -->
-    <div class="form-box">
-        <h2>Dla klientów</h2>
-        <label>Ilu co najmniej pracowników potrzebujesz?</label><br>
-        <input type="text" name="pracownicy" placeholder="np. 3"><br>
-        <
+<h2>Dla klientów</h2>
+<form>
+    <label>Ilu co najmniej pracowników potrzebujesz?</label>
+    <input type="text" name="pracownicy">
+    <input type="submit" value="Szukaj firm">
+</form>
+
+<br><br>
+
+<h2>Dla wykonawców</h2>
+<form>
+    <label>Miasto:</label>
+    <select name="miasto">
+        <option>Darłowo</option>
+        <option>Słupsk</option>
+        <option>Koszalin</option>
+    </select>
+    <br>
+    <input type="radio" name="usluga" value="malowanie" checked> malowanie<br>
+    <input type="radio" name="usluga" value="gipsowanie"> gipsowanie<br><br>
+    <input type="submit" value="Szukaj klientów">
+</form>
+
+</body>
+</html>
